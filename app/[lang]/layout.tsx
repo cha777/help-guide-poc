@@ -34,8 +34,9 @@ const navbar = (
       <Image
         src='/logo.png'
         alt='logo'
-        width={100}
-        height={100}
+        width='0'
+        height='0'
+        className='w-[100px] h-auto'
       />
     }
   />
