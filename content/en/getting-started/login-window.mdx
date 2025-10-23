@@ -1,5 +1,5 @@
-import { Callout } from 'nextra/components';
-import { FigureProvider, Figure, FigureRef } from '@/components/figure';
+import { Callout, Table } from 'nextra/components';
+import { FigureProvider, Figure } from '@/components/figure';
 
 # Login Window
 
@@ -102,8 +102,25 @@ When checking the connectivity, it gives a success message saying **"Success"** 
 
 On the top left corner of the Log in window, select which language you wish to change to by clicking on the radio buttons **English** or **Arabic**.
 
-| ![English View](/login-window/english-language.png) | ![Arabic View](/login-window/arabic-language.png) |
-| --------------------------------------------------- | ------------------------------------------------- |
-| _Figure 7: English Language_                        | _Figure 8: Arabic Language_                       |
+<Table>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>
+        <Figure
+          baseName='login-window/english-language'
+          alt='login-english'
+          description='English View'
+        />
+      </Table.Td>
+      <Table.Td>
+        <Figure
+          baseName='login-window/arabic-language'
+          alt='login-arabic'
+          description='Arabic View'
+        />
+      </Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
 
 </FigureProvider>

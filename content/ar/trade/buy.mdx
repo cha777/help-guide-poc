@@ -1,6 +1,10 @@
+import { FigureProvider, Figure, FigureRef } from '@/components/figure';
+
 # Buy
 
-Buy orders via the Buy window as in Figure 1. You can access the Buy window via several dashboards or via the Menu.
+<FigureProvider>
+
+Buy orders via the Buy window as in <FigureRef label='Buy Window' />. You can access the Buy window via several dashboards or via the Menu.
 
 Window invoking options:
 
@@ -13,8 +17,11 @@ Window invoking options:
 7. Order List
 8. Portfolio
 
-![Buy Window](/buy/buy-window.png)
-_Figure 1: Buy Window_
+<Figure
+  baseName='buy/buy-window'
+  alt='Buy Window'
+  description='Buy Window'
+/>
 
 ## Buy an Order
 
@@ -28,13 +35,18 @@ STEPS
 1. Invoke the Buy Window.
 2. Search/enter the symbol you wish to buy from, under the **Symbol** field.
 3. Select the **Portfolio**.
-4. Select/enter all other required fields to buy the order (order type, quantity, price, TIF, etc.) and click on the **Buy** button at the bottom of the window as in Figure 2.
-5. Once clicked on the **Buy** button, a confirmation window will let you click on **Confirm Order** to confirm the buy as in Figure 3.
+4. Select/enter all other required fields to buy the order (order type, quantity, price, TIF, etc.) and click on the **Buy** button at the bottom of the window as in <FigureRef label='Buy Window' />.
+5. Once clicked on the **Buy** button, a confirmation window will let you click on **Confirm Order** to confirm the buy as in <FigureRef label='Confirm Order' />.
 6. Once confirmed, the order will be listed under the Order List.
 7. **Price Information** of the selected symbol will be listed on the right side of the window.
 8. Click the **Reset** button to reset all values to its default values.
 9. Click the **Clear** button to clear all entered values.
 10. Add the order to a Basket by clicking on the basket button at the bottom left corner of the window as given below,
 
-![Confirm Order](/buy/confirm-order.png)
-_Figure 2: Confirm Order_
+<Figure
+  baseName='buy/confirm-order'
+  alt='Confirm Order'
+  description='Confirm Order'
+/>
+
+</FigureProvider>

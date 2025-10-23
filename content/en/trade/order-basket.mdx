@@ -1,9 +1,16 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
 # Order Basket
+
+<FigureProvider>
 
 Access the order basket via this window.
 
-{/* ![Order Basket](/order-basket/order-basket.png) */}
-_Figure 1: Order Basket_
+<Figure
+  baseName='order-basket/order-basket'
+  alt='Order Basket'
+  description='Order Basket'
+/>
 
 ## Accessing Widget
 
@@ -14,8 +21,11 @@ Window invoking options:
 1. Trade Dashboard > Order Basket
 2. Trade > Order Basket
 
-![Accessing from Menu](/order-basket/order-basket-menu.png)
-_Figure 2: Accessing from Menu_
+<Figure
+  baseName='order-basket/order-basket-menu'
+  alt='Accessing from Menu'
+  description='Accessing from Menu'
+/>
 
 ## Create New Basket
 
@@ -25,8 +35,12 @@ STEPS
 2. Enter a **Name** for the basket in the New Basket window and click **Confirm**.
 3. This will add a basket to add orders to into and execute them when needed.
 
-![Create Basket](/order-basket/create-basket.gif)
-_Figure 3: Create Basket_
+<Figure
+  baseName='order-basket/create-basket'
+  extension='gif'
+  alt='Create Basket'
+  description='Create Basket'
+/>
 
 ## Add Order To Basket
 
@@ -70,3 +84,5 @@ STEPS
 1. Navigate to Order Basket
 2. Select Download Excel Template
 3. This template can be used to add order details manually
+
+</FigureProvider>

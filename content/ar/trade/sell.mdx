@@ -1,4 +1,8 @@
+import { FigureProvider, Figure, FigureRef } from '@/components/figure';
+
 # Sell
+
+<FigureProvider>
 
 Sell orders via the Sell window. You can access the Sell window via several dashboards or via the Menu.
 
@@ -15,8 +19,11 @@ Window invoking options:
 9. Theoretical Dashboard
 10. News & Announcements Dashboard
 
-![Sell Window](/sell/sell-window.png)
-_Figure 1: Sell Window_
+<Figure
+  baseName='sell/sell-window'
+  alt='Sell Window'
+  description='Sell Window'
+/>
 
 ## Sell an Order
 
@@ -30,13 +37,18 @@ STEPS
 1. Invoke the Sell Window.
 2. Search/enter the symbol you wish to sell to, under the **Symbol** field.
 3. Select the **Portfolio**.
-4. Select/enter all other required fields to sell the order (order type, quantity, price, TIF, etc.) and click on the **Sell** button at the bottom of the window as in _Figure 2_.
-5. Once clicked on the **Sell** button, a confirmation window will let you click on **Confirm Order** to confirm the sell as in _Figure 2_.
+4. Select/enter all other required fields to sell the order (order type, quantity, price, TIF, etc.) and click on the **Sell** button at the bottom of the window as in <FigureRef label='Sell Window' />.
+5. Once clicked on the **Sell** button, a confirmation window will let you click on **Confirm Order** to confirm the sell as in <FigureRef label='Confirm Order' />.
 6. Once confirmed, the order will be listed under the Order List
 7. **Price Information** of the selected symbol will be listed on the right side of the window.
 8. Click the **Reset** button to reset all values to its default values.
 9. Click the **Clear** button to clear all entered values.
 10. Add the order to a Basket by clicking on the basket button at the bottom left corner of the window as given below,
 
-![Confirm Order](/sell/confirm-order.png)
-_Figure 2: Confirm Order_
+<Figure
+  baseName='sell/confirm-order'
+  alt='Confirm Order'
+  description='Confirm Order'
+/>
+
+</FigureProvider>

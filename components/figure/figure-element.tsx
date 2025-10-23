@@ -7,6 +7,7 @@ import { useFigureCounter } from './figure-context';
 type Props = {
   baseName: string;
   alt: string;
+  extension?: string;
   description?: string;
   [key: string]: unknown;
 };

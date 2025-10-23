@@ -5,13 +5,14 @@ import { useState, useEffect } from 'react';
 
 type Props = {
   baseName: string;
+  extension?: string;
   alt?: string;
   [key: string]: unknown;
 };
 
 type DerivedTheme = 'light' | 'dark';
 
-export default function ThemedImage({ baseName, alt = '', ...props }: Props) {
+export default function ThemedImage({ baseName, alt = '', extension = 'png', ...props }: Props) {
   const { theme = 'system' } = useTheme();
 
   const [derivedTheme, setDerivedTheme] = useState<DerivedTheme>('light');
@@ -26,7 +27,7 @@ export default function ThemedImage({ baseName, alt = '', ...props }: Props) {
   }, [theme]);
 
   // List of possible image sources, from most specific to least
-  const candidates = [`/${baseName}-${derivedTheme}.png`, `/${baseName}.png`];
+  const candidates = [`/${baseName}-${derivedTheme}.${extension}`, `/${baseName}.${extension}`];
 
   const [srcIndex, setSrcIndex] = useState(0);
 
