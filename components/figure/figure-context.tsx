@@ -7,7 +7,7 @@ type FigureRegistry = {
 };
 
 const FigureContext = createContext<{
-  increment: (label?: string) => number;
+  increment: (label: string) => number;
   getFigureNumber: (label: string) => number | undefined;
   version: number;
 }>({
@@ -29,18 +29,17 @@ export function FigureProvider({ children }: { children: React.ReactNode }) {
   const registryRef = useRef<FigureRegistry>({});
   const [version, setVersion] = useState(0);
 
-  const increment = useCallback((label?: string) => {
-    countRef.current += 1;
-
-    if (label) {
+  const increment = useCallback((label: string) => {
+    if (!registryRef.current[label]) {
+      countRef.current += 1;
       registryRef.current[label] = countRef.current;
       setVersion((v) => v + 1);
     }
 
-    return countRef.current;
+    return registryRef.current[label];
   }, []);
 
-  const getFigureNumber = useCallback((label: string) => registryRef.current[label], [registryRef.current]);
+  const getFigureNumber = useCallback((label: string) => registryRef.current[label], []);
 
   return <FigureContext.Provider value={{ version, increment, getFigureNumber }}>{children}</FigureContext.Provider>;
 }

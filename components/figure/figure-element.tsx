@@ -8,7 +8,7 @@ type Props = {
   baseName: string;
   alt: string;
   description?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 };
 
 export default function ThemedLocaleFigure({ baseName, alt, description = '', ...props }: Props) {
@@ -17,6 +17,7 @@ export default function ThemedLocaleFigure({ baseName, alt, description = '', ..
 
   useEffect(() => {
     setFigureNumber(increment(alt));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

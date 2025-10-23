@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 type Props = {
   baseName: string;
   alt?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 };
 
 type DerivedTheme = 'light' | 'dark';
@@ -37,6 +37,7 @@ export default function ThemedImage({ baseName, alt = '', ...props }: Props) {
   // fixme: handle image loading and error states
 
   return (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       src={candidates[srcIndex]}
       alt={alt}
