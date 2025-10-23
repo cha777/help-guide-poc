@@ -6,7 +6,9 @@ const meta: MetaRecord = {
       breadcrumb: false,
     },
   },
-  'getting-started': '',
+  'getting-started': {
+    title: 'البدء السريع',
+  },
   file: '',
   trade: '',
   market: '',

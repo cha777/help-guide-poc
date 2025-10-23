@@ -1,4 +1,6 @@
-const meta = {
+import type { MetaRecord } from 'nextra';
+
+const meta: MetaRecord = {
   buy: '',
   sell: '',
   'order-list': '',
