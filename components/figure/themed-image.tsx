@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { useTheme } from 'nextra-theme-docs';
+import { ImageZoom } from 'nextra/components';
 
 type Props = {
   baseName: string;
@@ -63,8 +64,7 @@ export default function ThemedImage({
   }
 
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
+    <ImageZoom
       src={candidates[srcIndex]}
       alt={alt}
       onError={() => {
