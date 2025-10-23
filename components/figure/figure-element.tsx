@@ -9,6 +9,7 @@ type Props = {
   alt: string;
   extension?: string;
   description?: string;
+  hasThemedImage?: boolean;
   [key: string]: unknown;
 };
 
