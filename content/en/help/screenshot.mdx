@@ -1,0 +1,47 @@
+import { FigureProvider, Figure, FigureRef } from '@/components/figure';
+
+# Get Screen Shot
+
+<FigureProvider>
+Take a screen shot of the current state of the workspace and make annotations, if required, using this function.
+
+### Take a Screen Shot
+
+STEPS:
+
+1. Click on the camera icon at the top right corner of the window.
+2. This opens the screen shot editor window where you can make annotations.
+3. Click on **Save** to save the image to a preferred location of your choice.
+
+<Figure
+  baseName='screenshot/screenshot'
+  alt='Screen Shot'
+  description='Screen Shot'
+/>
+
+### Make Annotations to Screen Shot
+
+STEPS:
+
+1. In the screen shot editor, under **Add Texts**, enter any text you wish, specify the **Font**, **Font Size**, **Text Color**, and click **Enter Text**.
+2. This will add the text on to the image. If you wish to add a new text, repeat from the step 1.
+3. To remove the previously added text, click **Undo Text**.
+
+<Figure
+  baseName='screenshot/add-text'
+  alt='Screen Shot Add Texts'
+  description='Screen Shot Add Texts'
+/>
+
+4. To draw a shape on the image, under **Draw Shapes**, specify the **Line Size**, **Border Color** and if it is a **Rectangle**, **Ellipse** or **Trend Line**, and draw on the image.
+5. If you wish to draw a new shape, repeat from step 4.
+6. To remove the previously drawn shape, click **Undo Drawing**.
+7. Click on **Save** to save the image to a preferred location of your choice.
+
+<Figure
+  baseName='screenshot/add-shape'
+  alt='Screen Shot Draw Shapes'
+  description='Screen Shot Draw Shapes'
+/>
+
+</FigureProvider>
