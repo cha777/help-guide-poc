@@ -1,0 +1,57 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Order List
+
+<FigureProvider>
+
+In this section it shows all the orders of multiple customers for every respective exchange rate that have taken place and the orders can be viewed with filtered order statuses (Open/Today's, Executed, Rejected, and Canceled) via this window.
+
+<Figure
+  baseName='order-list/order-list'
+  alt='Order List'
+  description='Order List'
+/>
+
+## Accessing widget
+
+As give in the image below, under search section, an order can be searched for a date range or a backdate order by using the date option given.
+
+As given in the diagram, if you go to the menu and navigate down under Trade section the order list can be found
+
+<Figure
+  baseName='order-list/order-list-menu'
+  alt='Accessing from Menu'
+  description='Accessing from Menu'
+/>
+
+## Order List Tabs
+
+- **All** – Lists all orders for that day.
+- **Open/Today's** – Lists all open orders for that day.
+- **Executed** – Lists all executed orders for the day.
+- **Rejected** – Lists all rejected orders for the day.
+- **Canceled** – Lists all canceled orders for the day.
+
+<Figure
+  baseName='order-list/order-list-status'
+  alt='Order List Status'
+  description='Order List Status'
+/>
+
+## Order List Filters
+
+- **Reset button** – Click on this button to reset any filtered orders.
+- **Customer number filter** – Filter orders by clicking on the customer no. filter and enter the customer numbers to be listed.
+- **Symbol filter** – Filter orders by clicking on the Symbol filter and enter the symbol to be listed.
+- **Order number filter** – Filter orders by clicking on the Order ID filter and enter the order ID to be listed.
+- **Side filter** – Filter orders by selecting the Side from the dropdown.
+- **Status filter** – Filter orders by selecting the Status from the dropdown.
+- **Show My Orders** – Tick on this checkbox to list only orders made by you (logged in user).
+
+<Figure
+  baseName='order-list/order-list-filters'
+  alt='Order List Filters'
+  description='Order List Filters'
+/>
+
+</FigureProvider>

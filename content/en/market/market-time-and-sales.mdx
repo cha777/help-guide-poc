@@ -1,0 +1,45 @@
+import { FigureProvider, Figure, FigureRef } from '@/components/figure';
+
+# Market Time and Sales
+
+<FigureProvider>
+View Market Time and Sales details in a more comprehensive view via the dashboard,and as a separate window via the menu
+
+## Accessing Widget
+
+Window invoking options:
+
+1. Market Dashboard → Market Monitor
+2. Market → Market Time & Sales
+
+<Figure
+  baseName='market-tns/market-tns'
+  alt='Market time and sales'
+  description='Market time and sales'
+/>
+
+## Filter details
+
+- Click on the icon to open the filter criteria to be filled, select to filter by **Price**, **Quantity**, **Turnover**, **Time**, enter the **From** **To** values and **Mark Above**, **Mark Below** values, and click **Apply** as in <FigureRef label='Filters' />.
+- Tick on the **Mark Successive Trades** checkbox to mark successive trades.
+- Tick on the **Filter Successive Trades** checkbox, to display only successive trades.
+
+<Figure
+  baseName='market-tns/market-tns-filters'
+  alt='Filters'
+  description='Market time and sales filters'
+/>
+
+## Right click options
+
+1. Right-click on a record and invoke the market function you require from the listed windows (E.g. Depth By Price, Graph, Time and Sales).
+2. For other common right-click options see title Right-click Options under section Getting Started
+3. This can be exported as an Excel, Copied with Headers, Copied selection and Copied current cell
+
+<Figure
+  baseName='market-tns/market-tns-context-menu'
+  alt='Context Menu'
+  description='Market time and sales right-click options'
+/>
+
+</FigureProvider>

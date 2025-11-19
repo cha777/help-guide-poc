@@ -1,0 +1,54 @@
+import { FigureProvider, Figure, FigureRef } from '@/components/figure';
+
+# Sell
+
+<FigureProvider>
+
+Sell orders via the Sell window. You can access the Sell window via several dashboards or via the Menu.
+
+Window invoking options:
+
+1. Trade Dashboard
+2. Menu → Trade → Sell
+3. Right-click on a Symbol → S
+4. Quote Dashboard
+5. Quote Dashboard → Technical Score
+6. Quote Dashboard → News & Announcements
+7. Quote Dashboard → Fair Value
+8. Quote Dashboard → Dividend
+9. Theoretical Dashboard
+10. News & Announcements Dashboard
+
+<Figure
+  baseName='sell/sell-window'
+  alt='Sell Window'
+  description='Sell Window'
+/>
+
+## Sell an Order
+
+> [!NOTE]
+>
+> - The Sell function of an order can be invoked in several windows.
+> - Wherever there is a <font color="#DB1E1D">**red**</font> color button in any window, this would invoke the Sell Window.
+
+STEPS
+
+1. Invoke the Sell Window.
+2. Search/enter the symbol you wish to sell to, under the **Symbol** field.
+3. Select the **Portfolio**.
+4. Select/enter all other required fields to sell the order (order type, quantity, price, TIF, etc.) and click on the **Sell** button at the bottom of the window as in <FigureRef label='Sell Window' />.
+5. Once clicked on the **Sell** button, a confirmation window will let you click on **Confirm Order** to confirm the sell as in <FigureRef label='Confirm Order' />.
+6. Once confirmed, the order will be listed under the Order List
+7. **Price Information** of the selected symbol will be listed on the right side of the window.
+8. Click the **Reset** button to reset all values to its default values.
+9. Click the **Clear** button to clear all entered values.
+10. Add the order to a Basket by clicking on the basket button at the bottom left corner of the window as given below,
+
+<Figure
+  baseName='sell/confirm-order'
+  alt='Confirm Order'
+  description='Confirm Order'
+/>
+
+</FigureProvider>

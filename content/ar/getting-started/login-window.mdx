@@ -1,0 +1,122 @@
+import { Callout, Table } from 'nextra/components';
+import { FigureProvider, Figure } from '@/components/figure';
+
+# نافذة تسجيل الدخول
+
+<FigureProvider>
+قم بتسجيل الدخول إلى النظام عبر نافذة **تسجيل الدخول** من خلال إدخال **اسم المستخدم** و**كلمة المرور**.
+يمكنك استخدام هذه النافذة لتعيين اللغة وإعدادات الاتصال من خلال خيار **إعدادات الاتصال**.
+
+## تسجيل الدخول إلى Pro 12 [#log-in-to-pro-12]
+
+الخطوات
+
+1. أدخل **اسم المستخدم**.
+2. أدخل **كلمة المرور**.
+3. حدد مربع الاختيار **تذكرني** لحفظ اسم المستخدم وكلمة المرور لتسجيل الدخول إلى النظام في المرة القادمة دون إعادة إدخال اسم المستخدم وكلمة المرور عند فتح نافذة تسجيل الدخول.
+4. انقر على **تسجيل الدخول** لتسجيل الدخول إلى النظام.
+
+<Figure
+  baseName='login-window/login-window-ar'
+  alt='login-window'
+  description='نافذة تسجيل الدخول'
+/>
+
+## اختيار لوحة المفاتيح الافتراضية [#choose-the-virtual-keyboard]
+
+الخطوات
+
+1. بمجرد ظهور نافذة تسجيل الدخول.
+2. حدد مربع الاختيار **لوحة المفاتيح الافتراضية**.
+3. ستظهر لوحة المفاتيح الافتراضية في نافذة تسجيل الدخول
+
+<Figure
+  baseName='login-window/virtual-keyboard'
+  alt='virtual-keyboard'
+  description='لوحة المفاتيح الافتراضية'
+/>
+
+## إعدادات الاتصال [#connection-settings]
+
+1. انقر على رابط إعدادات الاتصال في نافذة تسجيل الدخول.
+2. بمجرد النقر على رابط إعدادات الاتصال، ستنتقل إلى شاشة إعدادات الاتصال.
+3. أدخل القيم للمفاتيح التالية:
+
+- Mix URL
+- Archive Service URL
+- Real time Connection IPs/Port
+- Trade Connection IP/Port
+- Trade Rest Connection URL
+- Application Update URL
+
+4. بشكل افتراضي، سيتم تحديد مربع الاختيار الآمن للحفاظ على اتصال آمن مع الخوادم.
+
+<Callout type='info'>سيتم إجراء اتصال آمن مع الخوادم فقط إذا كانت الخوادم تدعم الاتصال الآمن.</Callout>
+
+5. انقر على حفظ لحفظ التغييرات.
+6. انقر على إغلاق لإلغاء التغييرات والعودة إلى نافذة تسجيل الدخول.
+
+<Callout type='info'>يمكنك الوصول إلى هذه الإعدادات بمجرد تسجيل الدخول إلى النظام ضمن إعدادات الاتصال أيضاً.</Callout>
+
+<Figure
+  baseName='login-window/connection-settings'
+  alt='connection-settings'
+  description='إعدادات الاتصال'
+/>
+
+## فحص اتصال إعدادات الاتصال [#check-the-connectivity-of-the-connection-settings]
+
+بمجرد إعداد الإعدادات والنقر على زر **فحص الاتصال**، يمكن للمستخدم التحقق من صحة اتصال كل اتصال
+
+<Figure
+  baseName='login-window/check-connectivity'
+  alt='check-connectivity'
+  description='فحص الاتصال'
+/>
+
+## الاتصال الآمن وغير الآمن [#secured-and-non-secured-connection]
+
+عند تحديد مربع الاختيار **آمن**، فهذا يعني أن الاتصال **آمن**، وعند إلغاء تحديد مربع الاختيار **آمن**، فهذا يعني أن الاتصال **غير آمن**.
+
+<Figure
+  baseName='login-window/secure-connection'
+  alt='secure-connection'
+  description='الاتصال الآمن وغير الآمن'
+/>
+
+## نجح الاتصال أو فشل [#success-and-fail-connection]
+
+عند فحص الاتصال، يعطي رسالة نجاح تقول **"نجح"** إذا كان الاتصال ناجحاً، وإلا يعطي رسالة تقول **"فشل"**.
+
+<Figure
+  baseName='login-window/connection-status'
+  alt='connection-status'
+  description='الاتصال الناجح والفاشل'
+/>
+
+## تغيير اللغة [#change-the-language]
+
+في الزاوية اليسرى العلوية من نافذة تسجيل الدخول، حدد اللغة التي ترغب في التغيير إليها بالنقر على أزرار الاختيار **الإنجليزية** أو **العربية**.
+
+<Table>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>
+        <Figure
+          baseName='login-window/english-language'
+          alt='login-english'
+          description='العرض الإنجليزي'
+        />
+      </Table.Td>
+      <Table.Td>
+        <Figure
+          baseName='login-window/arabic-language'
+          alt='login-arabic'
+          description='العرض العربي'
+        />
+      </Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+</FigureProvider>

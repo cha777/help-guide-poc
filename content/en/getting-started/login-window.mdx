@@ -1,0 +1,126 @@
+import { Callout, Table } from 'nextra/components';
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Login Window
+
+<FigureProvider>
+Log in to the system via the **Log in** window by entering your **username** and the **password**.
+You can use this window to set the language and connection settings through the **Connection Settings** option.
+
+## Log in to Pro 12 [#log-in-to-pro-12]
+
+STEPS
+
+1. Enter your **Username**.
+2. Enter your **Password**.
+3. Select the **Remember Me** check-box to save your username and the password to log in to the system next time without re-entering the username and the password once the Log in window is open.
+4. Click **Log in** to log into the system.
+
+<Figure
+  baseName='login-window/login-window-en'
+  alt='login-window'
+  description='Login Window'
+/>
+
+## Choose the Virtual Keyboard [#choose-the-virtual-keyboard]
+
+STEPS
+
+1. Once the Log in window is pop up.
+2. Select the **Virtual Keyboard** check-box.
+3. The virtual keyboard is appear on the log in window
+
+<Figure
+  baseName='login-window/virtual-keyboard'
+  alt='virtual-keyboard'
+  description='Virtual Keyboard'
+/>
+
+## Connection Settings [#connection-settings]
+
+1. Click on the Connection Settings link in the Log in window.
+2. Once the Connection Settings link is clicked navigates to the Connection Settings screen.
+3. Enter the values for the following keys,
+
+- Mix URL
+- Archive Service URL
+- Real time Connection IPs/Port
+- Trade Connection IP/Port
+- Trade Rest Connection URL
+- Application Update URL
+
+4. By default the Secure checkbox will be ticked in order to maintain a secure connection with the servers.
+
+<Callout type='info'>
+  A secure connection will be made with the servers only if the servers support a secure connection.
+</Callout>
+
+5. Click on Save to save changes.
+6. Click on Close to cancel and changes and go back to the Login window.
+
+<Callout type='info'>
+  You can access these settings once you log into the system under Connection Settings as well.
+</Callout>
+
+<Figure
+  baseName='login-window/connection-settings'
+  alt='connection-settings'
+  description='Connection Settings'
+/>
+
+## Check the Connectivity of the Connection Settings [#check-the-connectivity-of-the-connection-settings]
+
+Once the settings are set up and by clicking the **Check Connectivity** button, user is able to verify and validate the connectivity of each connections
+
+<Figure
+  baseName='login-window/check-connectivity'
+  alt='check-connectivity'
+  description='Check Connectivity'
+/>
+
+## Secured and Non-Secured Connection [#secured-and-non-secured-connection]
+
+When the **Secure** check box is checked, that means the connection is **Secured** and when the **Secure** check box is unchecked, that means the connection is **Non-Secured**.
+
+<Figure
+  baseName='login-window/secure-connection'
+  alt='secure-connection'
+  description='Secure and Non-Secure Connection'
+/>
+
+## Success and Fail connection [#success-and-fail-connection]
+
+When checking the connectivity, it gives a success message saying **"Success"** if the connectivity is successful otherwise it gives a message saying **"Failed"**.
+
+<Figure
+  baseName='login-window/connection-status'
+  alt='connection-status'
+  description='Success and Failed Connection'
+/>
+
+## Change the Language [#change-the-language]
+
+On the top left corner of the Log in window, select which language you wish to change to by clicking on the radio buttons **English** or **Arabic**.
+
+<Table>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>
+        <Figure
+          baseName='login-window/english-language'
+          alt='login-english'
+          description='English View'
+        />
+      </Table.Td>
+      <Table.Td>
+        <Figure
+          baseName='login-window/arabic-language'
+          alt='login-arabic'
+          description='Arabic View'
+        />
+      </Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+</FigureProvider>
