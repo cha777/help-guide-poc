@@ -41,12 +41,14 @@ export default function ThemedImage({
     }
 
     const candidates: string[] = [];
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    const prefix = basePath ? `${basePath}` : '';
 
     if (hasThemedImage) {
-      candidates.push(`/${baseName}-${derivedTheme}.${extension}`);
+      candidates.push(`${prefix}/${baseName}-${derivedTheme}.${extension}`);
     }
 
-    candidates.push(`/${baseName}.${extension}`);
+    candidates.push(`${prefix}/${baseName}.${extension}`);
 
     return candidates;
     // eslint-disable-next-line react-hooks/exhaustive-deps
